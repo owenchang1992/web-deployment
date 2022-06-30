@@ -36,8 +36,8 @@ jobs:
           
           terraform apply \
           -var-file=vars.tfvars
-          -input=false \
           -auto-approve 
+          -input=false
           
           export REPOSITORY_NAME=$(terraform output --raw repository_name)
           echo "::set-output name=repository-name::$REPOSITORY_NAME"
@@ -47,7 +47,7 @@ jobs:
     needs: [registry]
     env:
       REPOSITORY_NAME: ${{ needs.registry.outputs.repository-name }}
-      ACCOUNT_ID: {{ secrets.ACCOUNT_ID }}
+      ACCOUNT_ID: ${{ secrets.ACCOUNT_ID }}
     steps:
       - name: Check Out
         uses: actions/checkout@v2

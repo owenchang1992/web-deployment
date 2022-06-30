@@ -1,5 +1,5 @@
-bucket                      = "terraform-states"
+bucket                      = "terraform-states-portfolio"
 key                         = "ci-cd-example.tfstate"
-region                      = "eu-central-1"
+region                      = "ap-northeast-2"
 encrypt                     = true
 dynamodb_table              = "terraform-locks"
