@@ -35,9 +35,9 @@ jobs:
           -input=false
           
           terraform apply \
-          -var-file=vars.tfvars
-          -auto-approve 
-          -input=false
+          -var-file=vars.tfvars \
+          -auto-approve \
+          -input=false 
           
           export REPOSITORY_NAME=$(terraform output --raw repository_name)
           echo "::set-output name=repository-name::$REPOSITORY_NAME"
