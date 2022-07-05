@@ -12,9 +12,22 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
+  settings: {
+    "import/resolver": {
+      node: {
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
+      },
+    },
+  },
   plugins: ["react", "@typescript-eslint"],
   rules: {
-    "react/jsx-filename-extension": [0, { extensions: [".js", ".jsx"] }],
+    "import/extensions": [0, "never"],
+    "react/jsx-filename-extension": [
+      0,
+      { extensions: [".js", ".jsx", "ts", "tsx"] },
+    ],
+    "@typescript-eslint/ban-ts-comment": "off",
+    "import/no-unresolved": [2, { caseSensitiveStrict: false }],
     "react/function-component-definition": [
       2,
       {
