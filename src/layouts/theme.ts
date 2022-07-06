@@ -3,11 +3,11 @@ import { ThemeInterface } from './types';
 const theme: ThemeInterface = {
   breakpoints: {
     value: {
-      xs: '0px',
-      sm: '600px',
-      md: '960px',
-      lg: '1280px',
-      xl: '1920px',
+      xs: '0em',
+      sm: '43em',
+      md: '62em',
+      lg: '82em',
+      xl: '120em',
     },
     up(key: keyof typeof theme.breakpoints.value) {
       return (style: string) =>
