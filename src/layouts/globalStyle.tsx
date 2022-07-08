@@ -17,7 +17,6 @@ const container = {
 };
 
 export const StyledMain = styled.div<LayoutsProps>`
-  background: ${theme.palette.bg.main};
   height: 100vh;
   color: ${theme.palette.white};
   background-image: url(${(props) => props.bgImage.src});
@@ -60,6 +59,12 @@ export const StyledMain = styled.div<LayoutsProps>`
 
   a:hover {
     color: ${theme.palette.white};
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
   }
 `;
 
