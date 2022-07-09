@@ -1,5 +1,5 @@
 import React from 'react';
 
-const About = () => <div>About</div>;
+const About = () => <section id="about">About</section>;
 
 export default About;

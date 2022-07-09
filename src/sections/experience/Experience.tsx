@@ -1,5 +1,5 @@
 import React from 'react';
 
-const Experience = () => <div>Experience</div>;
+const Experience = () => <section id="experience">Experience</section>;
 
 export default Experience;
