@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import Footer from '../sections/footer/Footer';
+import Footer from '../components/footer/Footer';
 import { StyledMain, StyledContainer } from './globalStyle';
 import bgImage from '../../public/bg-texture.png';
 import theme from './theme';
