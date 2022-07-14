@@ -35,7 +35,6 @@ export const StyledMain = styled.div<LayoutsProps>`
 
   section {
     margin-top: 5rem;
-    height: 100vh;
     scroll-margin-top: 5rem;
 
     ${theme.breakpoints.down('md')(`
