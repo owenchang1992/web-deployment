@@ -1,29 +1,28 @@
 import styled from 'styled-components';
 
-const HeaderContainer = styled.div`
+const HeaderContainer = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   position: relative;
-  padding-top: 5rem;
-  min-height: 800px;
+  min-height: 600px;
 
   > h5 {
     font-size: 1.2rem;
   }
 
-  .text-light: {
+  .text--light: {
     color: ${({ theme }) => theme.palette.light};
   }
 
-  .button-group {
+  .button--group {
     margin-top: 2.5rem;
     display: flex;
     gap: 1.2rem;
   }
 
-  .header-socials {
+  .header--socials {
     width: 1.3rem;
     display: flex;
     flex-direction: column;
@@ -48,7 +47,7 @@ const HeaderContainer = styled.div`
     }
   }
 
-  .me-container {
+  .me--container {
     margin-top: 4rem;
     background: linear-gradient(${({ theme }) =>
       theme.palette.primary.main}, transparent);
@@ -57,7 +56,7 @@ const HeaderContainer = styled.div`
     overflow: hiden;
   }
 
-  ${({ theme }) => theme.breakpoints.down('md')(`height: 100vh;`)}
+  ${({ theme }) => theme.breakpoints.down('md')(`height: calc(100vh - 3rem;`)}
 `;
 
 export default HeaderContainer;

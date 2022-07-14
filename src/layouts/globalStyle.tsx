@@ -34,7 +34,14 @@ export const StyledMain = styled.div<LayoutsProps>`
   }
 
   section {
-    margin-top: 8rem;
+    margin-top: 5rem;
+    height: 100vh;
+    scroll-margin-top: 5rem;
+
+    ${theme.breakpoints.down('md')(`
+      margin-top: 3rem;
+      scroll-margin-top: 3rem;
+    `)}
 
     > h2,
     > h5 {
