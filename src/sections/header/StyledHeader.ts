@@ -54,6 +54,11 @@ const HeaderContainer = styled.section`
     border-radius: 12rem 12rem 0 0;
     padding: 5rem 1.5rem 1.5rem 1.5rem;
     overflow: hiden;
+    transition: ${({ theme }) => theme.transition.main};
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 
   ${({ theme }) => theme.breakpoints.down('md')(`height: calc(100vh - 3rem;`)}
