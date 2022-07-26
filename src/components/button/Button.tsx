@@ -8,6 +8,7 @@ export const BasicButton = styled.div`
   cursor: pointer;
   border: 1px solid ${({ theme }) => theme.palette.primary.main};
   transition: ${({ theme }) => theme.transition.main};
+  width: max-content;
 
   :hover {
     background: ${({ theme }) => theme.palette.white};
