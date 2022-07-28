@@ -11,10 +11,13 @@ const Contact = () => {
 
   const onNameChange = (e: React.ChangeEvent<HTMLInputElement>) =>
     setName(e.target.value);
+
   const onEmailChange = (e: React.ChangeEvent<HTMLInputElement>) =>
     setEmail(e.target.value);
+
   const onMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) =>
     setMessage(e.target.value);
+
   const resetForm = () => {
     setName('');
     setEmail('');
@@ -80,7 +83,7 @@ const Contact = () => {
             placeholder="Your Message"
             required
           />
-          <PrimaryButton onClick={onSubmit}>Send Message</PrimaryButton>
+          <PrimaryButton onClick={onSubmit}>Send</PrimaryButton>
         </EmailForm>
       </ContactContainer>
     </section>

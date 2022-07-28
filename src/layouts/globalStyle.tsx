@@ -42,6 +42,10 @@ export const StyledMain = styled.div<LayoutsProps>`
       scroll-margin-top: 3rem;
     `)}
 
+    &:last-child {
+      padding-bottom: 4rem;
+    }
+
     > h2,
     > h5 {
       text-align: center;
@@ -75,7 +79,7 @@ export const StyledMain = styled.div<LayoutsProps>`
 `;
 
 export const StyledContainer = styled.div`
-  margin: 0 auto;
+  margin: 0 auto 6rem auto;
   max-width: 1200px;
 
   ${theme.breakpoints.between('xs', 'sm')(`width: ${container.width.xs}`)}
