@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const StyledNavbar = styled.div`
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.1);
   width: max-content;
   padding: 0.7rem 1.7rem;
   position: fixed;
@@ -24,7 +24,7 @@ export const StyledLink = styled.div`
   color: ${({ theme }) => theme.palette.light};
 
   &:hover {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.2);
   }
 
   &.active {

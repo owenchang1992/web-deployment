@@ -27,15 +27,15 @@ const theme: ThemeInterface = {
   },
   palette: {
     bg: {
-      main: '#1f1f38',
-      variant: '#2c2c6c',
+      main: '#FFF',
+      variant: '#F4E6C1',
     },
     primary: {
-      main: '#4db5ff',
-      variant: 'rgba(77, 181, 255, 0.4)',
+      main: 'rgb(52, 158, 120)',
+      variant: 'rgb(191, 123, 132)',
     },
-    white: '#fff',
-    light: 'rgba(255, 255, 255, 0.6)',
+    white: 'rgb(147, 79, 16)',
+    light: 'rgb(222, 132, 70)',
   },
   transition: {
     main: 'all 400ms ease',
