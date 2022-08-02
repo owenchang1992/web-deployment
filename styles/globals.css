@@ -5,7 +5,6 @@ html {
   background-image: url(../public/bg-texture50.png);
 }
 
-html,
 body {
   outline: 0;
   height: 100vh;

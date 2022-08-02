@@ -40,6 +40,10 @@ export const StyledMain = styled.div`
       padding-bottom: 4rem;
     }
 
+    &#home {
+      margin-top: 0px;
+    }
+
     > h2,
     > h5 {
       text-align: center;
@@ -75,6 +79,7 @@ export const StyledMain = styled.div`
 export const StyledContainer = styled.div`
   margin: 0 auto 6rem auto;
   max-width: 1200px;
+  padding-top: 5rem;
 
   ${theme.breakpoints.between('xs', 'sm')(`width: ${container.width.xs}`)}
   ${theme.breakpoints.between('sm', 'md')(`width: ${container.width.sm}`)}
