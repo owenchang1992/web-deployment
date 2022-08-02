@@ -1,10 +1,5 @@
-import { StaticImageData } from 'next/image';
 import styled from 'styled-components';
 import theme from './theme';
-
-type LayoutsProps = {
-  bgImage: StaticImageData;
-};
 
 const container = {
   width: {
@@ -16,10 +11,9 @@ const container = {
   },
 };
 
-export const StyledMain = styled.div<LayoutsProps>`
+export const StyledMain = styled.div`
   height: 100vh;
   color: ${theme.palette.white};
-  background-image: url(${(props) => props.bgImage.src});
 
   h1,
   h2,
@@ -41,6 +35,10 @@ export const StyledMain = styled.div<LayoutsProps>`
       margin-top: 3rem;
       scroll-margin-top: 3rem;
     `)}
+
+    &:last-child {
+      padding-bottom: 4rem;
+    }
 
     > h2,
     > h5 {
@@ -75,7 +73,7 @@ export const StyledMain = styled.div<LayoutsProps>`
 `;
 
 export const StyledContainer = styled.div`
-  margin: 0 auto;
+  margin: 0 auto 6rem auto;
   max-width: 1200px;
 
   ${theme.breakpoints.between('xs', 'sm')(`width: ${container.width.xs}`)}

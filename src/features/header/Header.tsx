@@ -1,5 +1,5 @@
-import React from 'react';
-import Image from 'next/image';
+import React, { Suspense } from 'react';
+import Spline from '@splinetool/react-spline';
 import { BasicButton, PrimaryButton } from '../../components/button/Button';
 import HeaderSocials from './HeaderSocials';
 import HeaderContainer from './StyledHeader';
@@ -19,9 +19,11 @@ const Header = () => (
       </a>
     </div>
 
-    <div className="me--container">
-      <Image src="/me.png" height="350" width="220" alt="me" />
-    </div>
+    <Suspense fallback={null}>
+      <div className="me--container">
+        <Spline scene="https://prod.spline.design/50y6ON9iXyUKU-QI/scene.splinecode" />
+      </div>
+    </Suspense>
     <HeaderSocials />
   </HeaderContainer>
 );

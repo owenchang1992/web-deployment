@@ -41,6 +41,13 @@ const Experience = () => (
           <Details>
             <BsPatchCheckFill />
             <div>
+              <h4>Typescript</h4>
+              <Describe>Experienced</Describe>
+            </div>
+          </Details>
+          <Details>
+            <BsPatchCheckFill />
+            <div>
               <h4>React</h4>
               <Describe>Experienced</Describe>
             </div>
@@ -76,7 +83,7 @@ const Experience = () => (
           <Details>
             <BsPatchCheckFill />
             <div>
-              <h4>Apollo Client</h4>
+              <h4>GraphQL</h4>
               <Describe>Intermediate</Describe>
             </div>
           </Details>
