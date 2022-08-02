@@ -12,7 +12,6 @@ const Home: NextPage = () => (
     <Head>
       <title>Owen Chang Portfolio</title>
       <meta name="description" content="Owen Chang" />
-      {/* <link rel="icon" href="/favicon.ico" /> */}
     </Head>
 
     <Header />
