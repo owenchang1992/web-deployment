@@ -1,5 +1,10 @@
+import { StaticImageData } from 'next/image';
 import styled from 'styled-components';
 import theme from './theme';
+
+type LayoutsProps = {
+  bgImage: StaticImageData;
+};
 
 const container = {
   width: {
@@ -11,9 +16,10 @@ const container = {
   },
 };
 
-export const StyledMain = styled.div`
+export const StyledMain = styled.div<LayoutsProps>`
   height: 100vh;
   color: ${theme.palette.white};
+  background-image: url(${(props) => props.bgImage.src});
 
   h1,
   h2,

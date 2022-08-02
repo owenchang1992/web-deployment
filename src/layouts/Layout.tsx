@@ -1,11 +1,12 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { StyledMain, StyledContainer } from './globalStyle';
+import bgImage from '../../public/bg-texture50.png';
 import theme from './theme';
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <ThemeProvider theme={theme}>
-    <StyledMain>
+    <StyledMain bgImage={bgImage}>
       <StyledContainer>{children}</StyledContainer>
     </StyledMain>
   </ThemeProvider>
