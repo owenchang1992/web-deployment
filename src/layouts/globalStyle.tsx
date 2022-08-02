@@ -17,7 +17,6 @@ const container = {
 };
 
 export const StyledMain = styled.div<LayoutsProps>`
-  height: 100vh;
   color: ${theme.palette.white};
   background-image: url(${(props) => props.bgImage.src});
 
@@ -83,7 +82,7 @@ export const StyledMain = styled.div<LayoutsProps>`
 `;
 
 export const StyledContainer = styled.div`
-  margin: 0 auto 6rem auto;
+  margin: 0 auto;
   max-width: 1200px;
   padding-top: 5rem;
 
