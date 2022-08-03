@@ -2,9 +2,9 @@ html {
   background: #fff;
 }
 
-body {
+body,
+#__next {
   outline: 0;
-  height: 100vh;
   list-style: none;
   scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;

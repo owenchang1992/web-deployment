@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import Spline from '@splinetool/react-spline';
-import { BasicButton, PrimaryButton } from '../../components/button/Button';
+import { PrimaryButton } from '../../components/button/Button';
 import HeaderSocials from './HeaderSocials';
 import HeaderContainer from './StyledHeader';
 
@@ -11,9 +11,9 @@ const Header = () => (
     <h5 className="text--light">Frontend Developer</h5>
 
     <div className="button--group">
-      <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+      {/* <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
         <BasicButton>Donwload CV</BasicButton>
-      </a>
+      </a> */}
       <a href="#contact">
         <PrimaryButton>{`Let's Talk`}</PrimaryButton>
       </a>
