@@ -10,10 +10,9 @@ const About = () => (
         <p>
           <strong>Front-End Developer</strong> with a proven ability in helping
           companies write clean, reusable and maintainable code.{' '}
-          <strong>3+ years</strong>
-          of experience in facilitating projects from concept to launch.
-          Passionate about learning state-of-the-art tools and developing new
-          skills.
+          <strong>3+ years</strong> of experience in facilitating projects from
+          concept to launch. Passionate about learning state-of-the-art tools
+          and developing new skills.
         </p>
       </div>
     </div>
