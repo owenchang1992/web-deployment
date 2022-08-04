@@ -1,3 +1,4 @@
+import React from 'react';
 import Document, {
   Html,
   Head,
@@ -26,10 +27,10 @@ export default class MyDocument extends Document {
       return {
         ...initialProps,
         styles: [
-          <>
+          <React.Fragment key="style">
             {initialProps.styles}
             {sheet.getStyleElement()}
-          </>,
+          </React.Fragment>,
         ],
       };
     } finally {
