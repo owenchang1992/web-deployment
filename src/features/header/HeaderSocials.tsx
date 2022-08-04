@@ -1,11 +1,15 @@
 import React from 'react';
-import { BsGithub } from 'react-icons/bs';
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
 
 const HeaderSocials = () => (
   <div className="header--socials">
-    {/* <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+    <a
+      href="https://www.linkedin.com/in/owen-chang-973886134/"
+      target="_blank"
+      rel="noreferrer"
+    >
       <BsLinkedin />
-    </a> */}
+    </a>
     <a href="https://github.com/owenchang1992" target="_blank" rel="noreferrer">
       <BsGithub />
     </a>
