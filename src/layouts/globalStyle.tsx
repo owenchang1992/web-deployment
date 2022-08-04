@@ -37,7 +37,7 @@ export const StyledMain = styled.div<LayoutsProps>`
     scroll-margin-top: 5rem;
 
     &:last-child {
-      height: calc(100vh - 5rem);
+      height: calc(100vh - 5rem + 1px);
     }
 
     ${theme.breakpoints.down('md')(`
