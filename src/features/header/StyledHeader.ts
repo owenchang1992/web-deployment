@@ -30,7 +30,7 @@ const HeaderContainer = styled.section`
     gap: 0.8rem;
     position: absolute;
     left: 0;
-    bottom: 5rem;
+    bottom: 7rem;
 
     > a {
       display: flex;
@@ -48,12 +48,11 @@ const HeaderContainer = styled.section`
   }
 
   .me--container {
-    margin-top: 4rem;
+    margin-top: 3rem;
     background: linear-gradient(${({ theme }) =>
       theme.palette.primary.main}, transparent);
     border-radius: 12rem 12rem 0 0;
     padding: 5rem 1.5rem 1.5rem 1.5rem;
-    overflow: hiden;
     transition: ${({ theme }) => theme.transition.main};
 
     &:hover {
