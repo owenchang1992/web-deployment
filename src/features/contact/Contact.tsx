@@ -3,25 +3,29 @@ import emailjs from '@emailjs/browser';
 import { PrimaryButton } from '../../components/button/Button';
 import { ContactContainer, EmailForm } from './StyledContact';
 
+interface FormType {
+  name: string;
+  email: string;
+  message: string;
+}
+
+const initFormContents = {
+  name: '',
+  email: '',
+  message: '',
+};
+
 const Contact = () => {
   const form = useRef(null);
-  const [name, setName] = useState<string>('');
-  const [email, setEmail] = useState<string>('');
-  const [message, setMessage] = useState<string>('');
+  const [formContents, setFormContents] = useState<FormType>(initFormContents);
 
-  const onNameChange = (e: React.ChangeEvent<HTMLInputElement>) =>
-    setName(e.target.value);
-
-  const onEmailChange = (e: React.ChangeEvent<HTMLInputElement>) =>
-    setEmail(e.target.value);
-
-  const onMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) =>
-    setMessage(e.target.value);
+  const onFormChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) =>
+    setFormContents((prev) => ({ ...prev, [e.target.name]: e.target.value }));
 
   const resetForm = () => {
-    setName('');
-    setEmail('');
-    setMessage('');
+    setFormContents(initFormContents);
   };
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
@@ -60,24 +64,24 @@ const Contact = () => {
       <ContactContainer>
         <EmailForm ref={form} onSubmit={sendEmail}>
           <input
-            value={name}
-            onChange={onNameChange}
+            value={formContents.name}
+            onChange={onFormChange}
             type="text"
-            name="from_name"
+            name="name"
             placeholder="Your Full Name"
             required
           />
           <input
-            value={email}
-            onChange={onEmailChange}
+            value={formContents.email}
+            onChange={onFormChange}
             type="email"
             name="email"
             placeholder="Your Email"
             required
           />
           <textarea
-            value={message}
-            onChange={onMessageChange}
+            value={formContents.message}
+            onChange={onFormChange}
             name="message"
             rows={7}
             placeholder="Your Message"
