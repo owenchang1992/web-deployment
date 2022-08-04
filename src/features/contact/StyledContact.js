@@ -26,6 +26,5 @@ export const EmailForm = styled.form`
     background: transparent;
     border: 2px solid rgba(200, 200, 200, 0.7);
     resize: none;
-    color: ${({ theme }) => theme.palette.white};
   }
 `;
