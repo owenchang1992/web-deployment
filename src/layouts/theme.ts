@@ -28,7 +28,7 @@ const theme: ThemeInterface = {
   palette: {
     bg: {
       main: '#FFF',
-      variant: '#F4E6C1',
+      variant: 'rgba(244,230,193, 0.7)',
     },
     primary: {
       main: 'rgb(52, 158, 120)',
