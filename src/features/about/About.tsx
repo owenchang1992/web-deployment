@@ -9,13 +9,11 @@ const About = () => (
       <div className="about__me">
         <p>
           <strong>Front-End Developer</strong> with a proven ability in helping
-          companies create and maintain a better code base for reuseability.
-          Experience in facilitating projects from concept to launch. Passionate
-          about learning and development with new skills. Having own experience
-          of <strong>3+ years</strong>, helping companies developed CMS system
-          for <strong>TSMC</strong>, producing system and,{' '}
-          <strong>Streaming App</strong> for my privious company with tools like{' '}
-          <strong>React, NodeJS, MongoDB, GraphQL, etc</strong>
+          companies write clean, reusable and maintainable code.{' '}
+          <strong>3+ years</strong>
+          of experience in facilitating projects from concept to launch.
+          Passionate about learning state-of-the-art tools and developing new
+          skills.
         </p>
       </div>
     </div>
