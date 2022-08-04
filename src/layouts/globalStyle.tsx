@@ -36,14 +36,18 @@ export const StyledMain = styled.div<LayoutsProps>`
     margin-top: 5rem;
     scroll-margin-top: 5rem;
 
+    &:last-child {
+      height: calc(100vh - 5rem);
+    }
+
     ${theme.breakpoints.down('md')(`
       margin-top: 3rem;
       scroll-margin-top: 3rem;
-    `)}
 
-    &:last-child {
-      padding-bottom: 4rem;
-    }
+      &:last-child {
+        height: calc(100vh - 3rem);
+      }
+    `)}
 
     &#home {
       margin-top: 0px;

@@ -2,6 +2,7 @@ html {
   background: #fff;
 }
 
+html,
 body,
 #__next {
   outline: 0;
