@@ -1,19 +1,14 @@
 import React from 'react';
 import { BsPatchCheckFill } from 'react-icons/bs';
-import {
-  Container,
-  Frontend,
-  Content,
-  Details,
-  Describe,
-} from './StyledExperience';
+import { Frontend, Content, Details, Describe } from './StyledExperience';
+import Card from '../../components/cards/BasicCard';
 
 const Experience = () => (
   <section id="experience">
     <h5>Skills I Have</h5>
     <h2>My Experience</h2>
 
-    <Container>
+    <Card>
       <Frontend>
         <h3>Frontend Development</h3>
         <Content>
@@ -96,7 +91,7 @@ const Experience = () => (
           </Details>
         </Content>
       </Frontend>
-    </Container>
+    </Card>
   </section>
 );
 

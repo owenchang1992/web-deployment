@@ -1,11 +1,12 @@
 import React from 'react';
+import Card from '../../components/cards/BasicCard';
 
 const About = () => (
   <section id="about">
     <h5>Get To Know</h5>
     <h2>About Me</h2>
 
-    <div className="container about__container">
+    <Card>
       <div className="about__me">
         <p>
           <strong>Front-End Developer</strong> with a proven ability in helping
@@ -15,7 +16,7 @@ const About = () => (
           and developing new skills.
         </p>
       </div>
-    </div>
+    </Card>
   </section>
 );
 
